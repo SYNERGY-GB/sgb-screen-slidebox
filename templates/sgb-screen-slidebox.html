@@ -1,17 +1,17 @@
 <ion-slide-box mz-screen view-title="{{ title | translate }}" show-pager="false" does-continue="false" delegate-handle="mainSlidebox">
-    <ion-slide ng-if="_screenParams.slides >= 0">
+    <ion-slide ng-if="_screenParams.slides > 0">
         <ion-nav-view name="slide1" ></ion-nav-view>
     </ion-slide>
-    <ion-slide ng-if="_screenParams.slides >= 1">
+    <ion-slide ng-if="_screenParams.slides > 1">
         <ion-nav-view name="slide2"></ion-nav-view>
     </ion-slide>
-    <ion-slide ng-if="_screenParams.slides >= 2">
+    <ion-slide ng-if="_screenParams.slides > 2">
         <ion-nav-view name="slide3" ></ion-nav-view>
     </ion-slide>
-    <ion-slide ng-if="_screenParams.slides >= 3">
+    <ion-slide ng-if="_screenParams.slides > 3">
         <ion-nav-view name="slide4"></ion-nav-view>
     </ion-slide>
-    <ion-slide ng-if="_screenParams.slides >= 4">
+    <ion-slide ng-if="_screenParams.slides > 4">
         <ion-nav-view name="slide5"></ion-nav-view>
     </ion-slide>
 </ion-slide-box>
