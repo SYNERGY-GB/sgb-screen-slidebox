@@ -6,6 +6,10 @@ angular.module('sgb-screen-slidebox', ['megazord'])
         _screen.initialize($scope, _screenParams);
 
         $scope.currentSlide = _screenParams.defaultSlide === undefined ? 0 : _screenParams.defaultSlide;
+
+        $scope.update = function (index) {
+            $scope.currentSlide = index;
+        };
     }]);
 
 },{}]},{},[1]);
