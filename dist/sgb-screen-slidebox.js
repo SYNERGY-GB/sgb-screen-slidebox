@@ -6,6 +6,10 @@ angular.module('sgb-screen-slidebox', ['megazord'])
         _screen.initialize($scope, _screenParams);
 
         var slidebox = $ionicSlideBoxDelegate.$getByHandle('mainSlidebox');
+
+        if(_screenParams.defaultSlide !== undefined) {
+            slidebox.slide(_screenParams.defaultSlide, 0);
+        }
     }]);
 
 },{}]},{},[1]);
