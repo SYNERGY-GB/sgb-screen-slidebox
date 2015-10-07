@@ -1,4 +1,8 @@
-<ion-slide-box mz-screen view-title="{{ title | translate }}" show-pager="false" does-continue="false" delegate-handle="mainSlidebox">
+<ion-slide-box mz-screen view-title="{{ title | translate }}"
+               show-pager="false"
+               does-continue="false"
+               delegate-handle="mainSlidebox"
+               active-slide="currentSlide">
     <ion-slide ng-if="_screenParams.slides > 0">
         <ion-nav-view name="slide0" ></ion-nav-view>
     </ion-slide>
